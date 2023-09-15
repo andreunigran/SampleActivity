@@ -18,6 +18,8 @@ public class SegundaActivity extends AppCompatActivity {
        );
     }
     public void voltar(View v){
+        getIntent().putExtra("retorno", "devolvendo");
+        setResult(RESULT_OK,getIntent());
         onBackPressed();
     }
 }
